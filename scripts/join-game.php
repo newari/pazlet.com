@@ -1,10 +1,11 @@
 <?php
-
+define('root_dir', '../');
 if(isset($_POST['puzzle_ans'])&&isset($_POST['money'])&&isset($_POST['puzzle_no'])&&isset($_POST['game_id'])){
 	$puzzle_no=$_POST['puzzle_no'];
 	$ans=$_POST['puzzle_ans'];
 	$money=$_POST['money'];
 	$game_id=$_POST['game_id'];
+	$res=0;
 	if($money>=5){
 		session_start();
 		if(isset($_SESSION['user_id'])){

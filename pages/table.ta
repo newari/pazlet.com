@@ -58,19 +58,19 @@
                             <h5 class="pointer" onclick="nextStep(1)">Select Puzzle</h5>
                             <div class="step">
                                 <div class=" puzzles">
-                                <div class="puzzle puzzle1" onclick="showStep2('{$table.puzzle1}')">
+                                <div class="puzzle puzzle1" onclick="showStep2('{$table.puzzle1}', 1)">
                                     
                                 </div>
-                                <div class="puzzle puzzle2" onclick="showStep2('{$table.puzzle2}')">
+                                <div class="puzzle puzzle2" onclick="showStep2('{$table.puzzle2}', 2)">
                                     
                                 </div>
-                                <div class="puzzle puzzle3" onclick="showStep2('{$table.puzzle3}')">
+                                <div class="puzzle puzzle3" onclick="showStep2('{$table.puzzle3}', 3)">
                                     
                                 </div>
-                                <div class="puzzle puzzle4" onclick="showStep2('{$table.puzzle4}')">
+                                <div class="puzzle puzzle4" onclick="showStep2('{$table.puzzle4}', 4)">
                                     
                                 </div>
-                                <div class="puzzle puzzle5" onclick="showStep2('{$table.puzzle5}')">
+                                <div class="puzzle puzzle5" onclick="showStep2('{$table.puzzle5}', 5)">
                                     
                                 </div>
                                 <div class="puzzle-center">
@@ -121,6 +121,7 @@
                                 <div class="finelBox row-fluid">
                                     <div class="span3">Selected Puzzle</div>
                                     <input type="hidden" id="gameId" value="{$table.game_id}">
+                                    <input type="hidden" id="pNo" value="0">
                                     <div class="span9"><div class="puzBox"></div></div>
                                     <div class="span3 marginl0">Your Answer:</div>
                                     <div class="span9"><input type="text" value="" id="puzAnsReview" disabled></div>

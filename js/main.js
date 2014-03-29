@@ -19,7 +19,7 @@ function nextStep(stepNo){
 	}
 }
 
-function showStep2(puzzleLink){
+function showStep2(puzzleLink, pNo){
 	$(".puzBox").css("background-image", "url('images/"+puzzleLink+"')");
 	$(".step2 .step .ansBox").removeClass('hide');
 	$(".step"+activeStep).removeClass('activeStep');
@@ -29,6 +29,7 @@ function showStep2(puzzleLink){
 	selectedPuz=puzzleLink;
 	activeStep=2;
 	$(".step1").css('width', '10%');
+	$("#pNo").val(pNo);
 
 }
 
