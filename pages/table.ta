@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=description content="Four Opts is tha game of geeks. Here you can earn win lots of money using your mind skills.">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>CharBhar: The Game of Minds </title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link href="{$page.root_dir}css/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <link href="{$page.root_dir}css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="{$page.root_dir}css/main-style.css" type="text/css" rel="stylesheet"/>
+        <style type="text/css">
+            .puzzle1{
+                background-image: url('images/{$table.puzzle1}');
+                background-size: 200px 200px;
+            }
+            .puzzle2{
+                background-image: url('images/{$table.puzzle2}');
+                background-size: 200px 200px;
+            }
+            .puzzle3{
+                background-image: url('images/{$table.puzzle3}');
+                background-size: 200px 200px;
+            }
+            .puzzle4{
+                background-image: url('images/{$table.puzzle4}');
+                background-size: 200px 200px;
+            }
+            .puzzle5{
+                background-image: url('images/{$table.puzzle5}');
+                background-size: 200px 200px;
+            }
+        </style>
+    </head>
+    <body>
+        {$page.header}
+        <div class="error-box" style="{$page.msg_cls}">
+            <div>
+                <div class="container">
+                    <p id="nf">{$page.msg}</p>
+                </div>
+            </div>
+        </div>
+        <div class="container main-container">
+            <div class="row-fluid">
+                <div class="span12 brand-name alignC">
+                    <h1><a href="./index.php">Pazlet</a></h1>
+                </div>
+                <div class="span12 brand-name alignC marginl0 hrbw">
+                   <hr/>
+                    <h2>Game-Table</h2>
+                </div>
+                <div class="span12 marginl0 table-content">
+                    
+                    <div class="row-fluid">
+                        <div class="activeStep step1 alignC marginl0">
+                            <h5 class="pointer" onclick="nextStep(1)">Select Puzzle</h5>
+                            <div class="step">
+                                <div class=" puzzles">
+                                <div class="puzzle puzzle1" onclick="showStep2('{$table.puzzle1}')">
+                                    
+                                </div>
+                                <div class="puzzle puzzle2" onclick="showStep2('{$table.puzzle2}')">
+                                    
+                                </div>
+                                <div class="puzzle puzzle3" onclick="showStep2('{$table.puzzle3}')">
+                                    
+                                </div>
+                                <div class="puzzle puzzle4" onclick="showStep2('{$table.puzzle4}')">
+                                    
+                                </div>
+                                <div class="puzzle puzzle5" onclick="showStep2('{$table.puzzle5}')">
+                                    
+                                </div>
+                                <div class="puzzle-center">
+                                    <div class="row-fluid">
+                                        <div class="span6"><h4>Total Players:</h4></div>
+                                        <div class="span6"><h4>200</h4></div>
+                                        <div class="span6 marginl0"><h4>Total Money:</h4></div>
+                                        <div class="span6"><h4>1200</h4></div>
+                                        <div class="span6 marginl0"><h4>Points:</h4></div>
+                                        <div class="span6"><h4>2100</h4></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="alignC step2 marginl0">
+                            <h5 class="pointer" onclick="nextStep(2)">Solve Puzzle</h5>
+                            
+                            <div class="step hide alignC">
+                                <h4>The Puzzle Selected by you:</h4>
+                                <div class="puzBox">
+                                    
+                                </div>
+                                <div class="alignC hide ansBox">
+                                    <p><b>Your Answer</b></p>
+                                    <input type="text" class="span3 alignC" id="puzAns">
+                                    <p><button class="btn btn-warning" onclick="showStep3()">Now set Money</button></p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="step3 alignC marginl0">
+                            <h5 class="pointer" onclick="nextStep(3)">&nbsp;Set Money&nbsp;</h5>
+                            
+                            <div class="step hide">
+                                <div class="moneyBox">
+                                    <h4>Set Money on this Puzzle (in INR):</h4>
+                                    <input type="number" class="span3 alignC" id="setedMoney">
+                                    <p><button class="btn btn-warning" onclick="showStep4()">Go To Finel Step</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step4 alignC marginl0">
+                            <h5 class="pointer" onclick="nextStep(4)">Review & Submit</h5>
+                            
+                            <div class="step hide">
+                                <div class="finelBox row-fluid">
+                                    <div class="span3">Selected Puzzle</div>
+                                    <input type="hidden" id="gameId" value="{$table.game_id}">
+                                    <div class="span9"><div class="puzBox"></div></div>
+                                    <div class="span3 marginl0">Your Answer:</div>
+                                    <div class="span9"><input type="text" value="" id="puzAnsReview" disabled></div>
+                                    <div class="span3 marginl0">Seted Money</div>
+                                    <div class="span9"><input type="text" value="" id="setedMoneyReview" disabled></div>
+                                    <div class="span3 marginl0">Your Points if You win</div>
+                                    <div class="span9"><input type="text" value="" id="pointsReview" disabled></div>
+                                    <div class="span3 marginl0">Value of each Point:</div>
+                                    <div class="span9">Will Be decided after the game result!</div>
+                                    <div class="span3 marginl0">Money you can win:</div>
+                                    <div class="span9">Your Points * Value of each Point</div>
+                                    <div class="span4 offset4 btn btn-success sbmit-btn" onclick="joinGame()">Submit</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        {$page.footer}
+        
+        <script src="{$page.root_dir}js/jquery-1.9.0.min.js"></script>
+        <script src="{$page.root_dir}js/bootstrap.min.js"></script>
+        <script src="{$page.root_dir}js/main.js"></script>
+        <script src="{$page.root_dir}js/tJS.js"></script>
+    </body>
+</html>

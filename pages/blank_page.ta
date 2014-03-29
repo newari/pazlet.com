@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=description content="{$page.metad}">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>{$page.title}</title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel=stylesheet href="{$page.srcext}css/style.css">
+        <link rel=stylesheet href="{$page.srcext}css/bootstrap.css">
+    </head>
+    <body>
+        
+        <div style="{$page.msg_cls}" class="alignC">{$page.msg}</div>
+        {$page.content}
+        <script src="{$page.srcext}js/jquery-1.9.0.min.js"></script>
+        <script src="{$page.srcext}js/main.js"></script>
+    </body>
+</html>

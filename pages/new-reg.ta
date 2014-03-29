@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=description content="CLC online test series. Apply now and start to participates to tests.">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>CoachingName Online Test Series | tAssesment</title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link href="./css/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="./css/style-brand.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        {$page.header}
+        <div class="container main-container">
+            <div class="row-fluid">
+                <div class="span12 reg-form">
+                    <h3 class="alignC">REGISTRATION-FORM</h3>
+                    <form class="form " action="./scripts/registration.php" method="post">
+                        <div class="form-inline">
+                            <span><b>Name</b>: First</span>
+                            <input type="text" name="fname" required/>
+                            <span> Middle</span>
+                            <input type="text" name="mname"/>
+                            <span> Last</span>
+                            <input type="text" name="lname"/>
+                        </div>
+                        <div class="form-inline">
+                            <span><b>Contact Info</b>: Mobile</span>
+                            <input type="text" name="mobile" required/>
+                            <span> Email</span>
+                            <input type="email" name="email" required/>
+                        </div>
+                        <div class="form-inline">
+                            <span><b>Address</b>: Line-1</span>
+                            <textarea name="address_l1" rows="2"></textarea>
+                            <span>Line-2</span>
+                            <textarea name="address_l2" rows="2"></textarea>
+                        </div>
+                        <div class="form-inline">
+                            <span><b>City: </b></span>
+                            <input type="text" name="city"/>
+                            <span> <b>State: </b></span>
+                            <select name="state">
+                                <option value="">Rajasthan</option>
+                                <option value="">Hariyana</option>
+                                <option value="">Bihar</option>
+                            </select>
+                        </div>
+                        <hr/>
+                        <div class="form-inline">
+                            <span><b>Studying Presently </b>: Class</span>
+                            <select name="class">
+                                <option value="">IX</option>
+                                <option value="">X</option>
+                                <option value="">XI</option>
+                                <option value="">XII</option>
+                                <option value="">XII+</option>
+                            </select>
+                            <span> Course</span>
+                            <select name="course">
+                                {$coaching.courses_list}
+                            </select>
+                        </div>
+                        <div class="form-inline">
+                            <span><b>Studying Presently at: </b></span>
+                            <select name="ch_name" plcaeholder="Coaching name">
+                                <option value="cn">Coaching Name</option>
+                                <option value="scs">SCS, Sikar</option>
+                                <option value="clc">CLC, Sikar</option>
+                                <option value="samarpan">Samaprpan, Sikar</option>
+                            </select>
+                            <!-- <input type="text" name="ch_name"/>
+
+                            <span> Location</span>
+                            <input type="text" name="ch_location"/> -->
+                        </div>
+                        <div class="form-inline">
+                            <span><b>Entrance Exams</b>: A</span>
+                            <select name="exam_p">
+                                <option value="">IIT Main-Adv.</option>
+                                <option value="">IIT Main</option>
+                                <option value="">Bitsat</option>
+                                <option value="">RPMT</option>
+                                <option value="">AIPMT</option>
+                            </select>
+                            <span> B</span>
+                            <select name="exam_s">
+                                <option value="">IIT Main-Adv.</option>
+                                <option value="">IIT Main</option>
+                                <option value="">Bitsat</option>
+                                <option value="">RPMT</option>
+                                <option value="">AIPMT</option>
+                            </select>
+                            <span> C</span>
+                            <select name="exam_t">
+                                <option value="">IIT Main-Adv.</option>
+                                <option value="">IIT Main</option>
+                                <option value="">Bitsat</option>
+                                <option value="">RPMT</option>
+                                <option value="">AIPMT</option>
+                            </select>
+                        </div>
+                        <div class="form-inline">
+                            <span><b>Exams Year</b>: </span>
+                            <select name="exam_year">
+                                <option value="">2013-2014</option>
+                                <option value="">2014-2015</option>
+                                <option value="">2015-2016</option>
+                                <option value="">2016-2017</option>
+                                <option value="">2017-2018</option>
+                            </select>
+                        </div>
+                        <hr/>
+                        <div class="form-inline">
+                            <span><b>Login Info</b>: Password</span>
+                            <input type="password" name="password"/>
+                            <span> Retype Password</span>
+                            <input type="password" name="re_password"/>
+                        </div>
+                       <input type="submit" class="btn btn-success pullR" value="Register"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {$page.footer}
+    </body>
+</html>

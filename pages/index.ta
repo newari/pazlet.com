@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=description content="Four Opts is tha game of geeks. Here you can earn win lots of money using your mind skills.">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>CharBhar: The Game of Minds </title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link href="{$page.root_dir}css/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <link href="{$page.root_dir}css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="{$page.root_dir}css/main-style.css" type="text/css" rel="stylesheet"/>
+        
+    </head>
+    <body>
+        {$page.header}
+        <div class="error-box" style="{$page.msg_cls}">
+            <div>
+                <div class="container">
+                    <p id="nf">{$page.msg}</p>
+                </div>
+            </div>
+        </div>
+        <div class="container index-container">
+            <div class="row-fluid">
+                
+                <div class="span4  alignC">
+                    <div class="row-fluid">
+                        <div class="span12 brand-name">
+                            <h1><a href="#">Pazlet</a></h1>
+                            <span>The Game of Mind</span>
+                        </div>
+                        <div class="span12 marginl0 index-links">
+                            <div class="row-fluid">
+                                <a href="./login.php"><div class="span12 btn-flat">LogIn</div></a>
+                                <a href="./register.php"><div class="span12 marginl0 btn-flat">Register</div></a>
+                                <a href="./table.php"><div class="span12 marginl0 btn-flat">Play</div></a>
+                                <a href="./help.php"><div class="span12 marginl0 btn-flat">Help</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="span8 brand-img">
+                    <!-- <img  src="images/sm3.png"> -->
+                    <img src="images/rubik.png" width="400px">
+                </div>
+                <div class="span12 marginl0 intro">
+                    <div class="row-fluid">
+                        <div class="span12 alignC">
+                            <h2>Playing the 'Pazlet' is so easy as you think!</h2>
+                            <hr/>
+                        </div>
+                        <div class="span12 marginl0">
+                            <div class="row-fluid">
+                                <div class="span6 step-box">
+                                    <img src="images/dice4.png">
+                                </div>
+                                <div class="span6 step-box">
+                                    <h3 class="brand-bg-clr">STEP-1: You have to select the puzzle on the Game-Table!</h3>
+                                    <h4>So select that one which you can solve easily and other not.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span12 marginl0">
+                            <div class="row-fluid">
+                                <div class="span6 step-box">
+                                    <h3 class="brand-bg-clr">STEP-2: Now you have to solve the puzzle!</h3>
+                                    <h4>So select that one which you can solve easily and other not.</h4>
+                                </div>
+                                <div class="span6 step-box">
+                                    <img style="margin-top:-100px" src="images/puz-sol3.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span12 marginl0">
+                            <div class="row-fluid">
+                                <div class="span6 step-box">
+                                    <img style="margin-top:-100px" src="images/add-money.png">
+                                </div>
+                                <div class="span6 step-box">
+                                    <h3 class="brand-bg-clr">STEP-3: Now you have to solve the puzzle!</h3>
+                                    <h4>So select that one which you can solve easily and other not.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span12 marginl0">
+                            <div class="row-fluid">
+                                <div class="span6 step-box">
+                                    <h3 class="brand-bg-clr">STEP-4: Now you have to solve the puzzle!</h3>
+                                    <h4>So select that one which you can solve easily and other not.</h4>
+                                </div>
+                                <div class="span6 step-box">
+                                    <img style="margin-top:-100px" src="images/winner2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        {$page.footer}
+        
+        <script src="{$page.root_dir}js/jquery-1.9.0.min.js"></script>
+        <script src="{$page.root_dir}js/bootstrap.min.js"></script>
+        <script src="{$page.root_dir}js/main.js"></script>
+        <script src="{$page.root_dir}js/tJS.js"></script>
+    </body>
+</html>

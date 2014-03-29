@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=description content="CLC online test series. Apply now and start to participates to tests.">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>Contact us | Competition Quiz </title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link href="./css/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="./css/style-brand.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        {$page.header}
+        <div class="container main-container">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="row-fluid">
+                        <div class="span12 well alignC">
+                            <h4 class="alignC"> Contact Us !</h4>
+                            <hr/>
+                            <h4>COMPETITION QUIZ</h4>
+                            <p><b>Corparate office:</b> 129, Champa Nagar, Jaipur-302019, INDIA</br>+91 8769591664 | +91 8696777722</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        {$page.footer}
+        <script src="./js/jquery-1.9.0.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/brand-main.js"></script>
+
+    </body>
+</html>

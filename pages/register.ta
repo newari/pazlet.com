@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Register on CharBhar and start to earn, learn and make fun with your friends. On CharBhar you can earnmoney every hour, gain competition exams online test, share your hoto with friends, play games. Triass is totally free for any user." >
+    <meta name="keywords" content="Register, register on CharBhar, create new account, new a/c, new on CharBhar, start to earn, enter new world of CharBhar, how to register on CharBhar, Free registration, zero cost, easy registration, register on tritime, register on pictree" >
+    
+    <title>Register | CharBhar</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <style type="text/css">
+        
+        
+    </style>
+  </head>
+  <body>
+    <div class="error-box" style="{$page.msg_cls}">
+        <div>
+            <div class="container">
+                <p id="nf">{$page.msg}</p>
+            </div>
+        </div>
+    </div>
+    <div class="container main-container">
+      <div class="row-fluid">
+        <div class="span6">
+          <div class="brand-name alignC">
+              <h1><a href="./index.php">Pazlet</a></h1>
+              <span>The Game of Mind</span>
+          </div>
+          <div class="videobox">
+              <img src="images/reg-img.png">
+          </div>
+          
+        </div>
+        <div class="span6 register-box well marginl0">
+          <div class="form form-horizontal form-inline ffdetails">
+            <h2 class="alignC">Create New Account</h2>
+            <hr/>
+            <form action="scripts/register.php" method="post">
+            <fieldset>
+              <div class="control-group"> 
+                <div class="control-label">
+                  <label>First Name:</label>
+                </div>
+                <div class="controls">
+                  <input type="text" placeholder="First Name" name="f_name" required/>
+                </div>
+              </div>
+              <div class="control-group"> 
+                <div class="control-label">
+                  <label>Last Name:</label>
+                </div>
+                <div class="controls">
+                  <input type="text" placeholder="Last Name" name="l_name" required/>
+                </div>
+              </div>
+              <div class="control-group"> 
+                <div class="control-label">
+                  <label>Email:</label>
+                </div>
+                <div class="controls">
+                  <input type="email" placeholder="Your Email address" name="email" required/>
+                </div>
+              </div>
+              <div class="control-group"> 
+                <div class="control-label">
+                  <label>Mobile (+91):</label>
+                </div>
+                <div class="controls">
+                  <input type="text" placeholder="Mobile No." name="mobile" required/>
+                </div>
+              </div>
+              <div class="control-group"> 
+                <div class="control-label">
+                  <label>Password:</label>
+                </div>
+                <div class="controls">
+                  <input type="password" placeholder="Password" name="password" required/>
+                </div>
+              </div>
+              <div class="control-group"> 
+                <div class="control-label">
+                  <label>Confirm Password:</label>
+                </div>
+                <div class="controls">
+                  <input type="password" placeholder="Confirm Your Password" name="conf_password" required/>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <input type="submit" value="Register" class="btn btn-large btn-primary sharp"> OR <a href="./login.php">Login!</a> OR  <a href="./account_activation.php">Activate!</a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid footer">
+     <div class="span12">
+                  <hr/>
+                </div>
+                  <div class="span11 footer_part" align="right">
+                    <ul class="inline">
+                      <li><a href="help-desk.php"> Help</a></li>
+                      <li><a href="about.php"> About us</a></li>
+                      <li><a href="./privacy-policy.php"> Privacy Policy</a></li>
+                      <li><a href="./terms-of-service.php"> Terms of Service</a></li>
+                    </ul>
+                    <p align="center">COPYRIGHT NOTICE © 2014 CharBhar.com, All rights reserved.</p>
+                  </div>
+    </div>   
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/tJS.js"></script>
+    
+  </body>
+</html>

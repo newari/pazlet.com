@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'AccidentalPresidency';
+     src:url('../fonts/AccidentalPresidency.ttf') format('truetype');
+    
+}
+
+body{
+	background-color:rgb(10, 141, 182);
+}
+
+body h1, body h2, body h3, body h4, body h5{
+	font-family: AccidentalPresidency;
+}
+
+body h1, body h2, body h3, body h4, body h5{
+	letter-spacing: 0.04em;
+}
+body h5{
+	font-size: 17px;
+}
+.brand-clr{
+	color:#005580;
+}
+.brand-bg-clr{
+	color:rgb(10, 141, 182);
+}
+.error-box{
+	position: fixed;
+	top: 0px;
+}
+.main-container{
+	width: 99% !important;
+
+}
+
+.index-container{
+	margin-top: 50px;
+	width: 99% !important;
+
+}
+
+.brand-name {
+	position: relative;
+	text-align: center;
+}
+.sub-head .brand-name{
+	margin-top: 70px;
+}
+
+.brand-name h1 a{
+	color:#005580;
+}
+.brand-name h1{
+	font-family: pazlet;
+	color: orange;
+	font-size: 70px;
+	line-height: 60px;
+
+}
+.brand-name span{
+	position: absolute;
+	font-weight: bold;
+	font-size: 12px;
+	bottom: -15px;
+}
+.step-box{
+	padding: 30px;
+	text-align: center;
+}
+.arrow{
+	position: absolute;
+	width: 0; 
+	height: 0;
+	border-left: 30px solid rgb(252, 245, 245);
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-right: 40px solid transparent;
+	top: 35px;
+	left: 210px;
+
+}
+.intro{
+	margin-top: 50px;
+	background-color: rgb(220, 220, 220);
+	min-height: 300px !important;
+	border-radius: 3px;
+}
+.table-content{
+	position: relative;
+}
+.step{
+	border:solid thin rgb(200, 200, 200);
+	padding-top: 50px;
+	border: 0px;
+	position: absolute;
+	width: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.step {
+	color: rgb(10, 141, 182);
+}
+.step1{
+	background-color: rgb(250, 250, 250);
+	width:10%;
+	float: left;
+}
+.step1 .step{
+	background-color: rgb(250, 250, 250);
+	position: absolute;
+	left: 0px;
+
+}
+.step2{
+	background-color: rgb(230, 230, 230);
+	width:10%;
+	float: left;
+
+}
+.step2 .step{
+	background-color: rgb(230, 230, 230);
+	position: absolute;
+	left: 0px;
+	
+}
+.step3{
+	background-color: rgb(210, 210, 210);
+	width:10%;
+	float: left;
+}
+.step3 .step{
+	background-color: rgb(210, 210, 210);
+	position: absolute;
+	left: 0px;
+	
+}
+.step4{
+	background-color: rgb(190, 190, 190);
+	width:13%;
+	float: left;
+}
+.step4 .step{
+	background-color: rgb(190, 190, 190);
+	position: absolute;
+	left: 0px;
+	
+}
+.step1 >h5, .step2 >h5, .step3 >h5, .step4 >h5{
+	padding-bottom: 20px;
+	border-bottom: dashed 1px rgb(200, 200, 200);
+	color: rgb(10, 10, 10);
+}
+.step1 .step{
+	min-height: 850px;
+}
+.step2 .step{
+	min-height: 450px;
+}
+.step3 .step{
+	min-height: 250px;
+}
+.step4 .step{
+	min-height: 650px;
+}
+.activeStep{
+	width:67%;
+}
+.puzzles{
+	border-radius: 400px;
+	background-color: rgb(206, 52, 52) !important;
+	width: 990px;
+}
+.puzzle{
+
+	position: absolute;
+	width:200px;
+	height:200px;
+	background-color: white;
+
+	cursor: pointer;
+	border: 1px dashed rgb(200, 200, 200);
+box-shadow: 0px 6px 6px 2px rgb(200, 200, 200);
+}
+
+.puzzle1{
+	left:370px;
+}
+.puzzle2{
+	left: 750px;
+	top: 300px;
+}
+.puzzle5{
+	top:300px;
+	left: 10px;
+}
+.puzzle4{
+	top: 560px;
+	left: 180px;
+}
+.puzzle3{
+	top: 560px;
+	left: 580px;
+}
+.puzzle-center{
+	width: 350px;
+height: 250px;
+position: absolute;
+top: 320px;
+left: 300px;
+}
+.puzBox{
+	width:300px;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.sbmit-btn{
+	padding: 20px;
+	font-size: 18px;
+	margin-top: 50px;
+}
+.header >.container{
+	width:95%;
+
+}
+.header-links{
+	text-align: center;
+}
+.header-links li{
+	float: left;
+	list-style: none;
+	padding: 10px;
+}
+.header-links .round-frame{
+	border-radius: 100px;
+	background-color: rgb(44, 152, 194);
+	padding: 7px 8px;
+	margin: 5px;
+}
+.header-links li a{
+	color: black;
+}
+.header .username{
+	padding-top: 12px;
+	
+}
+.header .username a{
+	color: rgb(10, 10, 10);
+}
+.login-nf h1, .login-nf .login-box {
+	padding:10px;
+	text-align: center;
+}
+.login-nf .login-box {
+	padding-top:10px;
+	text-align: center;
+}
+.login-nf{
+	background-color: rgb(220, 220, 220);
+}
+.videobox{
+	position: relative;
+}
+.videobox img{
+	position: absolute;
+	right: 0px;
+	top:55px;
+}
+.sub-container{
+	margin-left: 0px !important;
+	margin-top: 10px;
+	background-color: white;
+	border-radius: 5px;
+	padding:20px;
+	box-shadow: 0px 2px 2px 2px rgb(99, 98, 98);
+	min-height: 200px;
+	margin-bottom: 50px;
+}
+.subc-right{
+	margin-top: 0px;
+	background-color: white;
+	border-radius: 5px;
+	padding:20px;
+	box-shadow: 0px 2px 2px 2px rgb(99, 98, 98);
+	min-height: 200px !important;
+	margin-bottom: 50px;
+}
+.sub-head .head-r{
+	text-align: center;
+	padding: 30px;
+	max-height: 300px;
+	min-height: 300px;
+}
+
+.sub-head .head-r img{
+	height:250px;
+}
+
+.hrdashed hr{
+	border-top: 1px dashed rgb(121, 117, 117);
+	border-bottom: 0px;
+}
+.ind-login-box{
+	background-color: rgb(10, 141, 182);
+padding: 30px;
+border-radius: 4px;
+margin-top: -40px;
+box-shadow: 0px 2px 2px 1px rgb(16, 73, 16);
+}
+.ind-login-box h1{
+	color: white;
+}
+.ind-login-box hr{
+	border-color: rgb(80, 150, 189);
+}
+.hrbw hr{
+	border-top: 1px solid #1A7FB8;
+	border-bottom: 1px solid #4293C0;
+}
+.hrbw h2{
+	color: rgb(220, 220, 220);
+}
+.index-links{
+	margin-top: 20px;
+}
+.index-links .btn-flat{
+	margin-top: 20px;
+	padding:10px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: AccidentalPresidency;
+	color: rgb(206, 231, 235);
+	background-color: rgb(16, 160, 206);
+}
+.index-links .btn-flat:hover{
+	color: rgb(10, 141, 182);
+	background-color: rgb(206, 231, 235);
+
+}
+.brand-img img:first-child{
+	/*position:absolute;
+	left:190px;
+	height: 300px;
+	top: 90px;*/
+}
+.brand-img img:nth-child(1){
+	
+	width: 300px;
+}
+.brand-img {
+	text-align: center;
+}
+.footer{
+	background-color: rgb(10, 141, 182);
+	text-align: center;
+}
+.footer-links li{
+	list-style: none;
+	float: left;
+	padding: 3px 5px;
+	margin: 0px 10px 2px 5px;
+	color: rgb(19, 89, 122);
+	font-size: 19px;
+	font-weight: bolder;
+	font-family: AccidentalPresidency;
+	letter-spacing: 0.03em;
+}
+.footer-links:nth-child(2) li{
+	list-style: none;
+	float: left;
+	padding: 3px 5px;
+	margin: 0px 10px 2px 5px;
+	color: rgb(19, 89, 140);
+	font-size: 20px;
+	font-weight: normal;
+	font-family: ;
+	letter-spacing: 0.04em;
+}
+.footer .brand-name img{
+	float: left;
+	margin-top: -20px;
+	margin-right: -100px;
+	width: 100px;
+}
+.footer .brand-name h1{
+	margin-top:-15px !important;
+}
+.span1{
+	min-width: 52px;
+}
+.span2{
+	min-width: 104px;
+}
+.span3{
+	min-width: 156px;
+}
+.span4{
+	min-width: 208px;
+}
+.span5{
+	min-width: 260px;
+}
+.span6{
+	min-width: 312px;
+}

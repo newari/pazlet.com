@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=description content="{$page.metad}"/>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>Advantages from Our TESTS </title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel=stylesheet href="./css/style.css">
+        <link rel=stylesheet href="./css/bootstrap.css">
+        <link rel=stylesheet href="./css/style-brand.css">
+
+        <link rel=author href="">
+    </head>
+    <body>
+        {$page.header}
+        <div class="error-box" style="{$page.msg_cls}">
+            <div>
+                <div class="container">
+                    <p id="nf">{$page.msg}</p>
+                </div>
+            </div>
+        </div>
+        <div class="container main-container">
+            <h3 class="alignC brand-color1">Benefits</h3>
+            <hr/>
+            <div class="row-fluid advantages-list">
+                <div class="span4">
+                    <span class="circle-tag">Quality content</span>
+                    
+                    <p><b>
+                    Content of each test is designed and made by experienced team.
+                    </b></p>
+                </div>
+                <div class="span4">
+                    <span class="circle-tag">Result Analysis</span>
+                    <p><b>Instant result analysis by Graph-wise, Difficulty-wise, Topic-wise, Time-wise. Also get comparision with toppers and last participated tests.</b></p>
+                </div>
+                <div class="span4">
+                    <span class="circle-tag">All India Rank</span>
+                    <p><b>Rank is generated on All India level which will help put to check your performace out of coaching and in real field.</b></p>
+                </div>
+                <div class="span4 marginl0">
+                    <span class="circle-tag">On PC or Mobile</span>
+                    <p><b>You can participate the tests on mobile or any PC. You need internet connectivity only for 5 Mins. to start the test.</b></p>
+                </div>
+                <div class="span4">
+                    <span class="circle-tag">Doubt Solution</span>
+                    <p><b>If you have any doubt related to any topic or question than our faculty team are availabele to solve them. You have to just post your problems.</b></p>
+                </div>
+                <div class="span4">
+                    <span class="circle-tag">Power Tests</span>
+                    <p><b>This is a new concept by which you will get new questions daily from our experts to crack your exam easily.</b></p>
+                </div>
+                <div class="span4 marginl0">
+                    <span class="circle-tag ">Cost Effective</span>
+                    <p><b>Each test package is designed at very low cost. Each package cost exist b/w Rs. 100 and 499 only.</b></p>
+                </div>
+                <div class="span4">
+                    <span class="circle-tag ">Safe & Secure</span>
+                    <p><b>You can buy each test package online. Transaction will be safe and secure.</b></p>
+                </div>
+            </div>
+        </div>
+        {$page.footer}
+        <script src="./js/jquery-1.9.0.min.js"></script>
+        <script src="./js/coaching-main.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        
+    </body>
+</html>

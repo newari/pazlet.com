@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=description content="{$page.metad}"/>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>{$page.title}</title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel=stylesheet href="./css/style.css">
+        <link rel=stylesheet href="./css/bootstrap.css">
+        <link rel=stylesheet href="./css/style-brand.css">
+
+        <link rel=author href="">
+    </head>
+    <body>
+        {$page.header}
+        <div class="error-box" style="{$page.msg_cls}">
+            <div>
+                <div class="container">
+                    <p id="nf">{$page.msg}</p>
+                </div>
+            </div>
+        </div>
+        <div class="container main-container">
+            {$page.main_content}
+        </div>
+        {$page.footer}
+        <script src="./js/jquery-1.9.0.min.js"></script>
+        <script src="./js/coaching-main.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=description content="Four Opts is tha game of geeks. Here you can earn win lots of money using your mind skills.">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>CharBhar: The Game of Minds </title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link href="{$page.root_dir}css/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <link href="{$page.root_dir}css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="{$page.root_dir}css/main-style.css" type="text/css" rel="stylesheet"/>
+        
+    </head>
+    <body>
+        {$page.header}
+        <div class="error-box" style="{$page.msg_cls}">
+            <div>
+                <div class="container">
+                    <p id="nf">{$page.msg}</p>
+                </div>
+            </div>
+        </div>
+        <div class="container main-container">
+            <div class="row-fluid">
+                <div class="span12 ">
+                    <div class="row-fluid sub-head">
+                        <div class="span4 brand-name">
+                           <h1><a href="./index.php">Pazlet</a></h1> 
+                        </div>
+                        <div class="span8 head-r">
+                            {$page.sub_head}
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="span12 sub-container">
+                    {$page.main_content}
+                </div>
+            </div>
+        </div>
+        {$page.footer}
+        
+        <script src="{$page.root_dir}js/jquery-1.9.0.min.js"></script>
+        <script src="{$page.root_dir}js/bootstrap.min.js"></script>
+        <script src="{$page.root_dir}js/main.js"></script>
+        <script src="{$page.root_dir}js/tJS.js"></script>
+    </body>
+</html>

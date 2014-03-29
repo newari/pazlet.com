@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=description content="{$page.metad}"/>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>About Competition Quiz </title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel=stylesheet href="./css/style.css">
+        <link rel=stylesheet href="./css/bootstrap.css">
+        <link rel=stylesheet href="./css/style-brand.css">
+
+        <link rel=author href="">
+    </head>
+    <body>
+        {$page.header}
+        <div class="error-box" style="{$page.msg_cls}">
+            <div>
+                <div class="container">
+                    <p id="nf">{$page.msg}</p>
+                </div>
+            </div>
+        </div>
+        <div class="container main-container">
+            <h3 class="alignC brand-color1">About Us</h3>
+            <hr/>
+            <h4>What we do?</h4>
+            <p>We’ve had an amazing journey coming to where we are today, and now feel confident that we can provide you a professional and effective solution in a timely manner.</p>
+           <p> With the latest, most advanced, accurate and user friendly subject material and simulation tests, we are the frontrunners in the support students need for the best preparation strategy to crack the JEE, NEET or any Entrance exam. With a vision to bring the simulation test software within the reach of every Student across the country, we strive to provide them the best quality of examination atmosphere and subject material through our software, as close as the click of a mouse button.</p>
+            <p>Competiion Quiz is dedicated to providing a plateform that gives students the practice and learning tools needed to compete successfully in today's environment. Our mission is to make technology truly work for education, by tailoring content for each individual student. While we have experienced educators on our staff, our Advisory Board provides us ongoing guidance on all issues related to education.</p>
+            <p></p>
+        </div>
+        {$page.footer}
+        <script src="./js/jquery-1.9.0.min.js"></script>
+        <script src="./js/coaching-main.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        
+    </body>
+</html>
