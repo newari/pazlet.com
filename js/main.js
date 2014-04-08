@@ -20,7 +20,7 @@ function nextStep(stepNo){
 }
 
 function showStep2(puzzleLink, pNo){
-	$(".puzBox").css("background-image", "url('images/"+puzzleLink+"')");
+	$(".puzBox").css("background-image", "url('puzzles/"+puzzleLink+"')");
 	$(".step2 .step .ansBox").removeClass('hide');
 	$(".step"+activeStep).removeClass('activeStep');
 	$(".step"+activeStep+" .step").addClass('hide');

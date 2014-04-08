@@ -15,7 +15,7 @@ if(isset($_POST['puzzle_ans'])&&isset($_POST['money'])&&isset($_POST['puzzle_no'
 			$user=$data->get_basic_info();
 			$user_bal=$user['balance'];
 			$game_status=$user['game_status'];
-			if($game_status==0){
+			if($game_status==''){
 				if($money<=$user_bal){
 					$new_bal=$user_bal-$money;
 					$game_status=json_encode(array($game_id, $puzzle_no, $ans, $money));
@@ -34,8 +34,8 @@ if(isset($_POST['puzzle_ans'])&&isset($_POST['money'])&&isset($_POST['puzzle_no'
 							$new_plrs_str=json_encode($new_plrs);
 							$new_total_plrs=$data->select_res['crnt_plrs']+1;
 							$new_total_money=$data->select_res['crnt_money']+1;
-							$data->update("t1_games", "crnt_plrs='$new_total_plrs', crnt_money='$new_total_money', $option='$new_plrs_str'", "id='$game_id'", "id DESC", "1");
-							$data->update("users", "balance='$new_bal', game_status='$game_status'", "id='$user_id'", "none", "1");
+							$data->update("t1_games", "crnt_plrs='$new_total_plrs', crnt_money='$new_total_money', $option='$new_plrs_str'", "id='$game_id'", "1");
+							$data->update("users", "balance='$new_bal', game_status='$game_status'", "id='$user_id'", "1");
 							$res="You have Joined the Game Successfully. Now Wait for result!";
 
 						}else{
@@ -48,7 +48,7 @@ if(isset($_POST['puzzle_ans'])&&isset($_POST['money'])&&isset($_POST['puzzle_no'
 					$res="Your balance is low!";
 				}
 			}else{
-				$res="You already Joined this Game Table!";
+				$res="You have Joined this Game-Table already!";
 			}
 		}else{
 

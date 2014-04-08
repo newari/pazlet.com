@@ -12,23 +12,23 @@
         <link href="{$page.root_dir}css/main-style.css" type="text/css" rel="stylesheet"/>
         <style type="text/css">
             .puzzle1{
-                background-image: url('images/{$table.puzzle1}');
+                background-image: url('./puzzles/{$table.puzzle1}');
                 background-size: 200px 200px;
             }
             .puzzle2{
-                background-image: url('images/{$table.puzzle2}');
+                background-image: url('./puzzles/{$table.puzzle2}');
                 background-size: 200px 200px;
             }
             .puzzle3{
-                background-image: url('images/{$table.puzzle3}');
+                background-image: url('./puzzles/{$table.puzzle3}');
                 background-size: 200px 200px;
             }
             .puzzle4{
-                background-image: url('images/{$table.puzzle4}');
+                background-image: url('./puzzles/{$table.puzzle4}');
                 background-size: 200px 200px;
             }
             .puzzle5{
-                background-image: url('images/{$table.puzzle5}');
+                background-image: url('./puzzles/{$table.puzzle5}');
                 background-size: 200px 200px;
             }
         </style>
@@ -58,19 +58,19 @@
                             <h5 class="pointer" onclick="nextStep(1)">Select Puzzle</h5>
                             <div class="step">
                                 <div class=" puzzles">
-                                <div class="puzzle puzzle1" onclick="showStep2('{$table.puzzle1}', 1)">
+                                <div class="puzzle puzzle1" onclick="showStep2('{$table.puzzle1}', 'a')">
                                     
                                 </div>
-                                <div class="puzzle puzzle2" onclick="showStep2('{$table.puzzle2}', 2)">
+                                <div class="puzzle puzzle2" onclick="showStep2('{$table.puzzle2}', 'b')">
                                     
                                 </div>
-                                <div class="puzzle puzzle3" onclick="showStep2('{$table.puzzle3}', 3)">
+                                <div class="puzzle puzzle3" onclick="showStep2('{$table.puzzle3}', 'c')">
                                     
                                 </div>
-                                <div class="puzzle puzzle4" onclick="showStep2('{$table.puzzle4}', 4)">
+                                <div class="puzzle puzzle4" onclick="showStep2('{$table.puzzle4}', 'd')">
                                     
                                 </div>
-                                <div class="puzzle puzzle5" onclick="showStep2('{$table.puzzle5}', 5)">
+                                <div class="puzzle puzzle5" onclick="showStep2('{$table.puzzle5}', 'e')">
                                     
                                 </div>
                                 <div class="puzzle-center">

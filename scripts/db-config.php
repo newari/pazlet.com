@@ -407,6 +407,7 @@ if($allow==true){
 (1, 'Master', 'Admin', 'masteradmin', 'password', '', '')");
 
         $dbh->add_clm("t1_games", "`crnt_money` INT(11) NOT NULL", "crnt_plrs");
+        $dbh->add_clm("puzzles", "`last_used` INT(11) NOT NULL", "used");
         // $dbh->add_clm("tests", "`status` ENUM('closed', 'opened') NOT NULL DEFAULT 'closed'", "attempted_by");
         // $dbh->add_clm("test_packages", "`std_type` tinytext NOT NULL");
         
